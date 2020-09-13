@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba1</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var persona = {
+            primerNombre: "Arturo",
+            segundoNombre: "Jose",
+            id: 2098,
+            nombreCompleto: function(){
+                return this.primerNombre + " " + this.segundoNombre;
+            }
+        };
+
+        document.getElementById("demo").innerHTML=persona.nombreCompleto()
+    </script>
+    <script src="ejemplo.js"></script>
+</body>
+</html>
